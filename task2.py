@@ -16,16 +16,21 @@ brentq_x = optimize.brentq(f, 0.1, 2.4)
 print("--- %s seconds ---" % (time.time() - start_time))
 
 bisect_x = optimize.bisect(f, 0.1, 2.4)
-newton_x = optimize.newton(f, 0.1)
-newtonx2_x = optimize.newton(f, 0.1, fprime)
+print("--- %s seconds ---" % (time.time() - start_time))
 
-bisect_time = optimize.bisect (f, 0.1, 2.4)
-print("bisect", bisect_time)
-brentq_time = optimize.brentq (f, 0.1, 2.4)
-print("brentq", brentq_time)
-newton_time = optimize.newton (f, 0.1)
-print("newton", newton_time)
-newtonx2_time = optimize.newton (f, 0.1, fprime)
-print("newtonx2", newtonx2_time)
+newton_x = optimize.newton(f, 0.1)
+print("--- %s seconds ---" % (time.time() - start_time))
+
+newtonx2_x = optimize.newton(f, 0.1, fprime)
+print("--- %s seconds ---" % (time.time() - start_time))
+
+#bisect_time = optimize.bisect (f, 0.1, 2.4)
+#print("bisect", bisect_time)
+#brentq_time = optimize.brentq (f, 0.1, 2.4)
+#print("brentq", brentq_time)
+#newton_time = optimize.newton (f, 0.1)
+#print("newton", newton_time)
+#newtonx2_time = optimize.newton (f, 0.1, fprime)
+#print("newtonx2", newtonx2_time)
 
 
